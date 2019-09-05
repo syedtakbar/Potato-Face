@@ -9,3 +9,4 @@ User of this application must have a google account to save the generated potato
 
 Please use the following link to lunch the application.
 
+https://syedtakbar.github.io/Potato-Face/
