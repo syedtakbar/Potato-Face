@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Potato Face App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+</head>
+
+<body class="body">
+    <nav id="main-nav" class="navbar navbar-expand navbar-light bg-warning ml-auto py-0 mb-3">
+        <div class="container">
+            <a class="navbar-brand text-dark text-center p-4 mr-0">Potato Face App<span id="title"></span></a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button type="button" id="save" class="btn btn-outline-light m-1 p-1 px-3">Save</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" id="logout" class="btn btn-outline-light m-1 p-1">Logout</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                <div id="no-drop" class="gallery">
+
+                    <div id="yes-drop" class="galleryItem img-thumbnail drag-drop draggable"> <img
+                            src="assets/images/eye-clipart-36.png" width=100px alt="" srcset=""> </div>
+                    <div class="galleryItem img-thumbnail drag-drop draggable"> <img
+                            src="assets/images/images-of-nose-26.png" width=100px alt="" srcset=""> </div>
+                    <div class="galleryItem img-thumbnail drag-drop draggable"> <img
+                            src="assets/images/mouth-clipart-35.png" width=150px alt="" srcset=""> </div>
+                </div>
+                <div id="outer-dropzone" class="dropzone">
+                </div>
+            </div>
+            <div class="col-sm-3" style="background-color: #fff; height: 400px; margin-top: 10px; border-radius: 4px;">
+                <div id="div-gellary"></div>
+            </div>
+        </div>
+        <div class="row" >
+                <div class="col-12 m-4 p-4">
+                    <div id="div-result" style="display: none;"></div>
+                </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src='assets/javascript/firebase.js'></script>
+    <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/google-photo-api.js"></script>
+
+
+
+</body>
+
+</html>
